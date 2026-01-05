@@ -3,88 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ashutosh | Portfolio</title>
+  <title>Ashutosh Sakle | Portfolio</title>
 
-  <!-- Icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-  <!-- CSS (INLINE) -->
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      color: #222;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    html { scroll-behavior: smooth; }
+    body { color: #222; }
 
     header {
-      position: fixed;
-      top: 0;
-      width: 100%;
+      position: fixed; top: 0; width: 100%;
       background: #0f172a;
-      display: flex;
-      justify-content: space-between;
-      padding: 15px 40px;
-      z-index: 1000;
+      display: flex; justify-content: space-between;
+      padding: 15px 40px; z-index: 1000;
     }
 
-    .logo {
-      color: #38bdf8;
-      font-size: 22px;
-      font-weight: bold;
-    }
+    .logo { color: #38bdf8; font-size: 22px; font-weight: bold; }
 
     nav a {
-      color: white;
-      margin-left: 20px;
-      text-decoration: none;
-      font-size: 14px;
+      color: white; margin-left: 20px;
+      text-decoration: none; font-size: 14px;
     }
-
-    nav a:hover {
-      color: #38bdf8;
-    }
+    nav a:hover { color: #38bdf8; }
 
     .hero {
       height: 100vh;
       background: linear-gradient(to right, #0f172a, #020617);
       color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding-top: 70px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; padding-top: 70px;
     }
 
-    .hero h1 {
-      font-size: 48px;
-    }
+    .hero h1 { font-size: 48px; }
+    .hero p { margin: 15px 0; opacity: 0.85; }
 
-    .hero p {
-      margin: 15px 0;
-      opacity: 0.8;
-    }
-
-    .btn-group {
-      margin-top: 20px;
-    }
+    .btn-group { margin-top: 20px; }
 
     .btn {
       background: #38bdf8;
       padding: 12px 25px;
-      color: #000;
-      text-decoration: none;
-      margin: 0 10px;
-      border-radius: 5px;
+      color: #000; text-decoration: none;
+      margin: 0 10px; border-radius: 5px;
       font-weight: 500;
     }
 
@@ -94,23 +55,14 @@
       color: #38bdf8;
     }
 
-    .section {
-      padding: 80px 12%;
-      text-align: center;
-    }
+    .section { padding: 80px 12%; text-align: center; }
+    .section h2 { margin-bottom: 30px; font-size: 32px; }
 
-    .section h2 {
-      margin-bottom: 30px;
-      font-size: 32px;
-    }
-
-    .bg {
-      background: #f1f5f9;
-    }
+    .bg { background: #f1f5f9; }
 
     .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 20px;
     }
 
@@ -119,6 +71,7 @@
       padding: 25px;
       border-radius: 8px;
       box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      text-align: left;
     }
 
     .card i {
@@ -144,15 +97,17 @@
   <nav>
     <a href="#home">Home</a>
     <a href="#about">About</a>
-    <a href="#services">Services</a>
+    <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <section id="home" class="hero">
-  <h1>Java Full Stack Developer</h1>
-  <p>Angular | Spring Boot | MySQL</p>
+  <h1>Ashutosh Sakle</h1>
+  <p><b>Java Full Stack Developer</b></p>
+  <p>Java | Spring Boot | Angular | MySQL</p>
   <div class="btn-group">
     <a href="#projects" class="btn">View Projects</a>
     <a href="#contact" class="btn outline">Contact Me</a>
@@ -162,55 +117,142 @@
 <section id="about" class="section">
   <h2>About Me</h2>
   <p>
-    Computer Science graduate with strong foundation in Java, Spring Boot and Angular.
-    Passionate about building real-world full stack applications.
+    Computer Science graduate with a strong foundation in Java and Object-Oriented Programming.
+    Skilled in building full stack web applications using Spring Boot and Angular.
+    Experienced in developing RESTful APIs, implementing CRUD operations,
+    and working with MySQL databases. Actively seeking an entry-level Java Full Stack Developer role.
   </p>
 </section>
 
-<section id="services" class="section bg">
-  <h2>Services</h2>
+<section id="skills" class="section bg">
+  <h2>Technical Skills</h2>
   <div class="cards">
+
     <div class="card">
       <i class="fa-solid fa-code"></i>
-      <h3>Frontend</h3>
-      <p>HTML, CSS, JavaScript, Angular</p>
+      <h3>Programming</h3>
+      <p>Java, Core Java, Java 8, C, C++, SQL</p>
     </div>
+
     <div class="card">
       <i class="fa-solid fa-database"></i>
       <h3>Backend</h3>
-      <p>Java, Spring Boot, REST API</p>
+      <p>Spring Boot, Spring MVC, Hibernate, JPA, JDBC, REST APIs</p>
     </div>
+
     <div class="card">
-      <i class="fa-solid fa-cloud"></i>
-      <h3>Deployment</h3>
-      <p>GitHub Pages, AWS Basics</p>
+      <i class="fa-solid fa-laptop-code"></i>
+      <h3>Frontend</h3>
+      <p>HTML, CSS, JavaScript, Angular</p>
     </div>
+
+    <div class="card">
+      <i class="fa-solid fa-toolbox"></i>
+      <h3>Tools & Concepts</h3>
+      <p>Git, GitHub, Postman, IntelliJ, VS Code, OOPs, DBMS, MVC, AWS Basics</p>
+    </div>
+
   </div>
 </section>
+
+
 
 <section id="projects" class="section">
   <h2>Projects</h2>
   <div class="cards">
+
     <div class="card">
       <h3>Payroll Management System</h3>
-      <p>Angular + Spring Boot + MySQL</p>
+      <p><b>Tech Stack:</b> Angular, Spring Boot, MySQL</p>
+      <ul>
+        <li>Developed a web-based system to manage employee records and salary details.</li>
+        <li>Implemented complete CRUD operations for employees and payroll modules.</li>
+        <li>Designed RESTful APIs using Spring Boot.</li>
+        <li>Integrated MySQL database for secure data persistence.</li>
+      </ul>
     </div>
+
     <div class="card">
       <h3>Society Management System</h3>
-      <p>Full Stack Web Application</p>
+      <p><b>Tech Stack:</b> Angular, Spring Boot, MySQL</p>
+      <ul>
+        <li>Built a full stack application to manage society members and maintenance records.</li>
+        <li>Developed REST APIs for member and payment management.</li>
+        <li>Implemented CRUD operations with MySQL integration.</li>
+        <li>Added validation and basic error handling.</li>
+      </ul>
     </div>
+
+    <div class="card">
+      <h3>Student Management System</h3>
+      <p><b>Tech Stack:</b> Java, Spring Boot, MySQL</p>
+      <ul>
+        <li>Developed a system to manage student profiles, courses, and academic records.</li>
+        <li>Implemented CRUD operations for students and course modules.</li>
+        <li>Created REST APIs for backend services using Spring Boot.</li>
+        <li>Used MySQL database for student and course data storage.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Campus Management System</h3>
+      <p><b>Tech Stack:</b> Angular, Spring Boot, MySQL</p>
+      <ul>
+        <li>Built a centralized campus management application for students and staff.</li>
+        <li>Managed modules like departments, courses, and faculty details.</li>
+        <li>Developed REST APIs and integrated frontend with Angular.</li>
+        <li>Implemented role-based data handling (Admin, Staff).</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Hospital Management System</h3>
+      <p><b>Tech Stack:</b> Java, Spring Boot, MySQL</p>
+      <ul>
+        <li>Designed a hospital management system for patients, doctors, and appointments.</li>
+        <li>Implemented CRUD operations for patient and doctor records.</li>
+        <li>Developed REST APIs for appointment scheduling.</li>
+        <li>Integrated MySQL for secure medical data storage.</li>
+      </ul>
+    </div>
+
   </div>
 </section>
 
-<section id="contact" class="section bg">
+
+<section id="education" class="section bg">
+  <h2>Education</h2>
+  <div class="cards">
+
+    <div class="card">
+      <h3>Bachelor of Engineering (Computer Science)</h3>
+      <p>RGPV, Bhopal | IIST, Indore</p>
+      <p><b>CGPA:</b> 7.62 | <b>Year:</b> 2025</p>
+    </div>
+
+    <div class="card">
+      <h3>Higher Secondary (12th – PCM)</h3>
+      <p>MPBSE | Percentage: 89% | 2021</p>
+    </div>
+
+    <div class="card">
+      <h3>Secondary (10th)</h3>
+      <p>MPBSE | Percentage: 88% | 2019</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="section">
   <h2>Contact</h2>
   <p>📧 ashutosh.sakle09@gmail.com</p>
-  <p>📱 +91-8103722064</p>
-  <p>🔗 github.com/ashutosh-sakle09</p>
+  <p>📞 +91-8103722064</p>
+  <p>🔗 https://github.com/ashutosh-sakle09</p>
+  <p>📍 Pune, Maharashtra, India</p>
 </section>
 
 <footer>
-  © 2026 Ashutosh Sakle | All Rights Reserved
+  © 2026 Ashutosh Sakle | Java Full Stack Developer
 </footer>
 
 </body>
